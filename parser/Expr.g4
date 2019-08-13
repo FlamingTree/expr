@@ -5,37 +5,37 @@ start
     ;
 
 expr
-    : '.' name=Identifier                       # ClosureMemberDot
-    | expr '[' index=expr ']'                   # MemberIndex
-    | expr '[' a=expr? ':' b=expr? ']'          # Slice
-    | expr '.' name=Identifier                  # MemberDot
-    | builtins                                  # BuiltinsList
-    | expr '(' args=arguments? ')'              # Call
-    | op=( '+' | '-' | '!' | 'not' ) expr       # Unary
-    | expr op='..' expr                         # Binary
-    | expr op=( '*' | '**' | '/' | '%' ) expr   # Binary
-    | expr op=( '+' | '-' ) expr                # Binary
-    | expr op=( '<' | '>' | '<=' | '>=' ) expr  # Binary
-    | expr op='startsWith' expr                 # Binary
-    | expr op='endsWith' expr                   # Binary
-    | expr op='contains' expr                   # Binary
-    | expr op='matches' pattern=expr            # Matches
-    | expr op=( 'in' | 'not in' ) expr          # Binary
-    | expr op=( '==' | '!=' ) expr              # Binary
-    | expr op=And expr                          # Binary
-    | expr op=Or expr                           # Binary
-    | expr '?' e1=expr ':' e2=expr              # Ternary
-    | Nil                                       # Nil
-    | BooleanLiteral                            # Boolean
-    | StringLiteral                             # String
-    | IntegerLiteral                            # Integer
-    | HexIntegerLiteral                         # Integer
-    | FloatLiteral                              # Float
-    | Identifier                                # Identifier
-    | Pointer                                   # Pointer
-    | arrayLiteral                              # Array
-    | mapLiteral                                # Map
-    | '(' expr ')'                              # Parenthesized
+    : '.' name=Identifier                               # ClosureMemberDot
+    | expr '[' index=expr ']'                           # MemberIndex
+    | expr '[' a=expr? ':' b=expr? ']'                  # Slice
+    | expr '.' name=Identifier                          # MemberDot
+    | builtins                                          # BuiltinsList
+    | expr '(' args=arguments? ')'                      # Call
+    | op=( '+' | '-' | '!' | 'not' ) expr               # Unary
+    | expr op='..' expr                                 # Binary
+    | expr op=( '*' | '**' | '/' | '%' ) expr           # Binary
+    | expr op=( '+' | '-' ) expr                        # Binary
+    | expr op=( '<' | '>' | '<=' | '>=' ) expr          # Binary
+    | expr op='startsWith' expr                         # Binary
+    | expr op='endsWith' expr                           # Binary
+    | expr op='contains' expr                           # Binary
+    | expr op='matches' pattern=expr                    # Matches
+    | expr op=( 'in' | 'not in' | 'not_in' ) expr       # Binary
+    | expr op=( '==' | '!=' ) expr                      # Binary
+    | expr op=And expr                                  # Binary
+    | expr op=Or expr                                   # Binary
+    | expr '?' e1=expr ':' e2=expr                      # Ternary
+    | Nil                                               # Nil
+    | BooleanLiteral                                    # Boolean
+    | StringLiteral                                     # String
+    | IntegerLiteral                                    # Integer
+    | HexIntegerLiteral                                 # Integer
+    | FloatLiteral                                      # Float
+    | Identifier                                        # Identifier
+    | Pointer                                           # Pointer
+    | arrayLiteral                                      # Array
+    | mapLiteral                                        # Map
+    | '(' expr ')'                                      # Parenthesized
     ;
 
 builtins

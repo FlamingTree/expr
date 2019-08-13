@@ -298,7 +298,7 @@ func (c *compiler) BinaryNode(node *ast.BinaryNode) {
 		c.compile(node.Right)
 		c.emit(OpIn)
 
-	case "not in":
+	case "not in", "not_in":
 		c.compile(node.Left)
 		c.compile(node.Right)
 		c.emit(OpIn)

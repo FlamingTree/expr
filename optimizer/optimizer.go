@@ -44,7 +44,7 @@ func (*inArray) Enter(node *Node) {}
 func (*inArray) Exit(node *Node) {
 	switch n := (*node).(type) {
 	case *BinaryNode:
-		if n.Operator == "in" || n.Operator == "not in" {
+		if n.Operator == "in" || n.Operator == "not in" || n.Operator == "not_in" {
 			if array, ok := n.Right.(*ArrayNode); ok {
 				if len(array.Nodes) > 0 {
 					t := n.Left.GetType()
@@ -199,7 +199,7 @@ func (*inRange) Enter(node *Node) {}
 func (*inRange) Exit(node *Node) {
 	switch n := (*node).(type) {
 	case *BinaryNode:
-		if n.Operator == "in" || n.Operator == "not in" {
+		if n.Operator == "in" || n.Operator == "not in" || n.Operator == "not in" {
 			if rng, ok := n.Right.(*BinaryNode); ok && rng.Operator == ".." {
 				if from, ok := rng.Left.(*IntegerNode); ok {
 					if to, ok := rng.Right.(*IntegerNode); ok {
@@ -216,7 +216,7 @@ func (*inRange) Exit(node *Node) {
 								Right:    to,
 							},
 						})
-						if n.Operator == "not in" {
+						if n.Operator == "not in" || n.Operator == "not_in" {
 							patch(node, &UnaryNode{
 								Operator: "not",
 								Node:     *node,

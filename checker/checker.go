@@ -194,7 +194,7 @@ func (v *visitor) BinaryNode(node *ast.BinaryNode) reflect.Type {
 			return boolType
 		}
 
-	case "in", "not in":
+	case "in", "not in", "not_in":
 		if isString(l) && isStruct(r) {
 			return boolType
 		}
