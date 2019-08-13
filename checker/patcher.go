@@ -1,9 +1,9 @@
 package checker
 
 import (
-	"github.com/antonmedv/expr/ast"
-	"github.com/antonmedv/expr/internal/conf"
-	"github.com/antonmedv/expr/parser"
+	"github.com/FlamingTree/expr/ast"
+	"github.com/FlamingTree/expr/internal/conf"
+	"github.com/FlamingTree/expr/parser"
 )
 
 type operatorPatcher struct {

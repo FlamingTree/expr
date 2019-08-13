@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/antonmedv/expr"
-	"github.com/antonmedv/expr/checker"
-	"github.com/antonmedv/expr/internal/conf"
-	"github.com/antonmedv/expr/parser"
+	"github.com/FlamingTree/expr"
+	"github.com/FlamingTree/expr/checker"
+	"github.com/FlamingTree/expr/internal/conf"
+	"github.com/FlamingTree/expr/parser"
 	"github.com/stretchr/testify/assert"
 )
 

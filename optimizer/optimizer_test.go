@@ -3,11 +3,11 @@ package optimizer_test
 import (
 	"testing"
 
-	"github.com/antonmedv/expr/ast"
-	"github.com/antonmedv/expr/checker"
-	"github.com/antonmedv/expr/internal/conf"
-	"github.com/antonmedv/expr/optimizer"
-	"github.com/antonmedv/expr/parser"
+	"github.com/FlamingTree/expr/ast"
+	"github.com/FlamingTree/expr/checker"
+	"github.com/FlamingTree/expr/internal/conf"
+	"github.com/FlamingTree/expr/optimizer"
+	"github.com/FlamingTree/expr/parser"
 	"github.com/sanity-io/litter"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

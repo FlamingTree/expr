@@ -26,8 +26,8 @@ First what we need to do is to create a way users will be creating, editing (and
 
 ```go
 import (
-	"github.com/antonmedv/expr"
-	"github.com/antonmedv/expr/vm"
+	"github.com/FlamingTree/expr"
+	"github.com/FlamingTree/expr/vm"
 )
 
 var program *vm.Program
@@ -105,4 +105,4 @@ SameLocation() and Date < Ticket.Segments[0].Date
 Next
 * [Language Definition](Language-Definition.md)
 * [Usage](Usage.md)
-* [Examples](https://godoc.org/github.com/antonmedv/expr#pkg-examples)
+* [Examples](https://godoc.org/github.com/FlamingTree/expr#pkg-examples)

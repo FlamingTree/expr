@@ -4,14 +4,15 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"github.com/antonmedv/expr"
-	"github.com/antonmedv/expr/checker"
-	"github.com/antonmedv/expr/compiler"
-	"github.com/antonmedv/expr/optimizer"
-	"github.com/antonmedv/expr/parser"
-	"github.com/sanity-io/litter"
 	"io/ioutil"
 	"os"
+
+	"github.com/FlamingTree/expr"
+	"github.com/FlamingTree/expr/checker"
+	"github.com/FlamingTree/expr/compiler"
+	"github.com/FlamingTree/expr/optimizer"
+	"github.com/FlamingTree/expr/parser"
+	"github.com/sanity-io/litter"
 )
 
 var (

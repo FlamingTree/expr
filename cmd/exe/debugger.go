@@ -2,18 +2,19 @@ package main
 
 import (
 	"fmt"
-	"github.com/antonmedv/expr/checker"
-	"github.com/antonmedv/expr/compiler"
-	"github.com/antonmedv/expr/optimizer"
-	"github.com/antonmedv/expr/parser"
-	. "github.com/antonmedv/expr/vm"
-	"github.com/gdamore/tcell"
-	"github.com/rivo/tview"
-	"github.com/sanity-io/litter"
 	"sort"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/FlamingTree/expr/checker"
+	"github.com/FlamingTree/expr/compiler"
+	"github.com/FlamingTree/expr/optimizer"
+	"github.com/FlamingTree/expr/parser"
+	. "github.com/FlamingTree/expr/vm"
+	"github.com/gdamore/tcell"
+	"github.com/rivo/tview"
+	"github.com/sanity-io/litter"
 )
 
 func debugger() {

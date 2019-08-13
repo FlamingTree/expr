@@ -3,12 +3,12 @@ package expr
 import (
 	"reflect"
 
-	"github.com/antonmedv/expr/checker"
-	"github.com/antonmedv/expr/compiler"
-	"github.com/antonmedv/expr/internal/conf"
-	"github.com/antonmedv/expr/optimizer"
-	"github.com/antonmedv/expr/parser"
-	"github.com/antonmedv/expr/vm"
+	"github.com/FlamingTree/expr/checker"
+	"github.com/FlamingTree/expr/compiler"
+	"github.com/FlamingTree/expr/internal/conf"
+	"github.com/FlamingTree/expr/optimizer"
+	"github.com/FlamingTree/expr/parser"
+	"github.com/FlamingTree/expr/vm"
 )
 
 // Eval parses, compiles and runs given input.

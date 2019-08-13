@@ -1,8 +1,8 @@
 # Expr 
 [![Build Status](https://travis-ci.org/antonmedv/expr.svg?branch=master)](https://travis-ci.org/antonmedv/expr) 
-[![Go Report Card](https://goreportcard.com/badge/github.com/antonmedv/expr)](https://goreportcard.com/report/github.com/antonmedv/expr) 
+[![Go Report Card](https://goreportcard.com/badge/github.com/FlamingTree/expr)](https://goreportcard.com/report/github.com/FlamingTree/expr) 
 [![Code Coverage](https://scrutinizer-ci.com/g/antonmedv/expr/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/antonmedv/expr/?branch=master) 
-[![GoDoc](https://godoc.org/github.com/antonmedv/expr?status.svg)](https://godoc.org/github.com/antonmedv/expr)
+[![GoDoc](https://godoc.org/github.com/FlamingTree/expr?status.svg)](https://godoc.org/github.com/FlamingTree/expr)
 
 <img src="docs/images/logo-small.png" width="150" alt="expr logo" align="right">
 
@@ -28,7 +28,7 @@ product.Stock < 15
 ## Features
 
 * Seamless integration with Go (no need to redefine types)
-* Static typing ([example](https://godoc.org/github.com/antonmedv/expr#example-Env)).
+* Static typing ([example](https://godoc.org/github.com/FlamingTree/expr#example-Env)).
   ```go
   out, err := expr.Compile(`name + age`)
   // err: invalid operation + (mismatched types string and int)
@@ -46,7 +46,7 @@ product.Stock < 15
 ## Install
 
 ```
-go get github.com/antonmedv/expr
+go get github.com/FlamingTree/expr
 ```
 
 <a href="https://www.patreon.com/antonmedv">
